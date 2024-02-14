@@ -4,14 +4,17 @@
         <link rel="stylesheet" href="./styles.css">
         
     </head> 
-    <body>
+    <body onload="openModal()">
         <div class="container">
             <div >
-                <h1 class = "header_text">Do you wanna go out with me?</h1>
+                <h1 class = "header_text">Do you wanna go out with me Vane?</h1>
+                <br>
             </div>
             <div class="gif_container">
-                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtZ2JiZDR0a3lvMWF4OG8yc3p6Ymdvd3g2d245amdveDhyYmx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute animated illustration">
+                <img src="https://wallpapers-clan.com/wp-content/uploads/2023/11/star-wars-grogu-black-desktop-wallpaper-preview.jpg" alt="" style="width: 500px; height: auto;">
             </div>
+            <br>
+            <br>
             <div class = "buttons">
                 <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
                 <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
@@ -29,6 +32,26 @@
                 </script> 
             </div>
         </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p>Holis Vane</p>
+                
+                <p>Estoy sacando mi lado mas Full Stack posible y adicional mi mas cursi jeje.</p>
+                <p>No estoy seguro que te encanten este tipo de cosas, pero hoy me levante modo romantico e inge.</p>
+                <p>Si no te gustan este tipo de cosas dimelo jejeje, quiero conocer muy bien que te gusta :D</p>
+                <p>No siendo mas....... te dejo con mi obra de arte </p>
+                <p> <b>Nota:</b> La respuesta persiste en Base de datos asi que me enterare que vas a poner</p>
+            </div>
+        </div>
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
+            }
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+        </script>
        
     </body> 
 </html>
